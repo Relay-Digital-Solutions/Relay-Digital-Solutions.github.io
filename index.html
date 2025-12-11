@@ -79,12 +79,13 @@
       border: 1px dashed rgba(255, 255, 255, 0.12);
       border-radius: var(--radius);
       padding: 32px;
-      min-height: 200px;
+      min-height: 240px;
     }
 
     .logo {
-      max-width: 100%;
-      max-height: 140px;
+      width: clamp(140px, 28vw, 220px);
+      max-height: 220px;
+      height: auto;
       object-fit: contain;
       filter: drop-shadow(0 8px 30px rgba(0, 0, 0, 0.35));
     }
@@ -184,7 +185,7 @@
           <a class="btn primary" href="mailto:relay-digital-solutions@pm.me">Email Us</a>
         </div>
 
-        <p class="meta">Send me an email to get started, or to get my phone number.</p>
+        <p class="meta">Send me an email to get started, and get my phone number.</p>
       </div>
     </section>
   </main>
