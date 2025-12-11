@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relay Digital Solutions</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/mona-sans/index.css">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #000;
+      --card: #0b0b0f;
+      --stroke: #1f1f28;
+      --text: #f7f7f8;
+      --muted: #a3a3ad;
+      --accent: #38bdf8;
+      --accent-strong: #0ea5e9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Mona Sans", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      font-weight: 400;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+    }
+
+    main {
+      width: min(1100px, calc(100vw - 32px));
+      margin: auto;
+      padding: 48px 24px 64px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      align-items: flex-start;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: var(--text);
+      user-select: none;
+    }
+
+    .logo-mark {
+      width: 62px;
+      height: 62px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      display: grid;
+      place-items: center;
+      box-shadow: 0 15px 40px rgba(56, 189, 248, 0.25);
+    }
+
+    .logo-mark svg {
+      width: 32px;
+      height: 32px;
+      color: #0b0b0f;
+    }
+
+    .logo-text {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 7vw, 74px);
+      line-height: 1.02;
+      font-weight: 900;
+      text-wrap: balance;
+    }
+
+    p {
+      margin: 0;
+      max-width: 640px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .card {
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+      border: 1px solid var(--stroke);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(6px);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      transition: transform 120ms ease, box-shadow 180ms ease, background 180ms ease, border-color 180ms ease;
+      border: 1px solid var(--stroke);
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--text);
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      color: #0b1224;
+      border-color: var(--accent);
+      box-shadow: 0 14px 40px rgba(56, 189, 248, 0.35);
+    }
+
+    .btn.primary:hover {
+      background: var(--accent-strong);
+      border-color: var(--accent-strong);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--stroke);
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        padding: 36px 18px 48px;
+      }
+
+      h1 {
+        font-size: clamp(34px, 10vw, 54px);
+      }
+
+      .logo-mark {
+        width: 56px;
+        height: 56px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="logo" href="#">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 34c0-9.941 8.059-18 18-18h6c1.105 0 2 .895 2 2s-.895 2-2 2h-6c-7.732 0-14 6.268-14 14s6.268 14 14 14h5.5c2.485 0 4.5-2.015 4.5-4.5S41.485 39 39 39H32a2 2 0 0 1 0-4h7c4.971 0 9 4.029 9 9s-4.029 9-9 9H34c-9.941 0-18-8.059-18-18Z" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="logo-text">Relay Digital Solutions</span>
+    </a>
+
+    <div class="card">
+      <div class="pill">New — Let’s build</div>
+      <h1>So you have an idea?</h1>
+      <p>We help founders and teams turn ideas into reality. Tell us what you’re building and we’ll make it happen.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:contact@example.com">Email us</a>
+        <a class="btn" href="https://calendly.com/your-link" target="_blank" rel="noreferrer">Book time</a>
+      </div>
+    </div>
+
+    <footer>Swap in your real email + Calendly link anytime — this page is ready for GitHub Pages.</footer>
+  </main>
+</body>
+</html>
+
